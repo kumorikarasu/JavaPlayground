@@ -12,6 +12,6 @@ public class TestFirst{
     public void testLengthOfTheUniqueKey() {
 
         Greeting msg = new Greeting("GOOD");
-        Assert.assertEquals("GOODA", msg.toString());
+        Assert.assertEquals("GOOD", msg.toString());
     }
 }
