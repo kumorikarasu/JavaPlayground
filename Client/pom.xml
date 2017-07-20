@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.ryougi</groupId>
+    <artifactId>parent</artifactId>
+    <version>0.1-SNAPSHOT</version>
+  </parent>
+  <groupId>com.ryougi</groupId>
+  <artifactId>Client</artifactId>
+  <version>0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <name>Client Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  
+  <distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>localhost-releases</name>
+        <url>http://ryougi.com:8082/artifactory/libs-release-local</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>localhost-snapshots</name>
+        <url>http://ryougi.com:8082/artifactory/libs-snapshot-local</url>
+    </snapshotRepository>
+  </distributionManagement>
+  
+  <dependencies>
+      <dependency>
+      <groupId>com.ryougi</groupId>
+      <artifactId>Common</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+    	<groupId>javax.servlet</groupId>
+    	<artifactId>servlet-api</artifactId>
+    	<version>2.4</version>
+    	<scope>provided</scope>
+    </dependency>
+    
+    
+  </dependencies>
+
+  <build>
+    <finalName>ClientSite</finalName>
+  </build>
+</project>

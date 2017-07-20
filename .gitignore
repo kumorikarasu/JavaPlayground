@@ -54,3 +54,4 @@ lib/
 *.eml
 .project
 .classpath
+.settings/
