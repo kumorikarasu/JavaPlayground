@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.ryougi</groupId>
-    <artifactId>parent</artifactId>
+    <artifactId>BankParent</artifactId>
     <version>0.1-SNAPSHOT</version>
   </parent>
   <groupId>com.ryougi</groupId>
